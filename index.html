@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CareerKit – CV &amp; Cover Letter Builder</title>
 <style>
-:root{--bg:#f4f5f8;--cd:#fff;--tx:#1a1d24;--mu:#5b6270;--bd:#d5d9e2;--ac:#2563eb;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12141a;--cd:#1c1f27;--tx:#eceef3;--mu:#a0a8b8;--bd:#343a48;--ac:#7aa5ff;--on:#0b1020}}
-:root[data-theme="dark"]{--bg:#12141a;--cd:#1c1f27;--tx:#eceef3;--mu:#a0a8b8;--bd:#343a48;--ac:#7aa5ff;--on:#0b1020}
+:root{--bg:#fff8f0;--cd:#fff;--tx:#1b1f3b;--mu:#4a4e6e;--bd:#e5cfc6;--ac:#d62828;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131f;--cd:#211b2b;--tx:#f4eff8;--mu:#b9b0c6;--bd:#3d3350;--ac:#ff6b6b;--on:#1b0a0a}}
+:root[data-theme="dark"]{--bg:#17131f;--cd:#211b2b;--tx:#f4eff8;--mu:#b9b0c6;--bd:#3d3350;--ac:#ff6b6b;--on:#1b0a0a}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:88px}
 header.top{display:flex;gap:8px;align-items:center;padding:10px 12px;max-width:1300px;margin:0 auto}
@@ -53,6 +53,18 @@ h3{color:var(--ac)}.bar{box-shadow:0 -4px 16px rgba(80,70,200,.18)}
 .ft{text-align:center;padding:18px 12px 8px;font-size:13px;color:var(--mu)}.ft b{background:linear-gradient(120deg,#4f46e5,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
 .ph{float:right;width:90px;height:90px;border-radius:50%;object-fit:cover;margin-left:12px}
 .cols{display:grid;grid-template-columns:2fr 1fr;gap:0 18px}.t-sidebar aside{background:#f1f2f8;padding:2px 12px 8px;border-radius:8px;align-self:start}
+header.top{background:#d62828}
+.b.p,.ch.on{background:var(--ac);color:var(--on)}
+.prog i{background:linear-gradient(90deg,#d62828,#f77f00,#ffd60a)}
+.bar{box-shadow:0 -4px 16px rgba(214,40,40,.18)}.card{box-shadow:0 2px 10px rgba(214,40,40,.10)}
+.ft{background:#1b1f3b;color:#fff;margin-top:14px;padding:22px 12px;font-size:15px}.ft b{background:none;-webkit-text-fill-color:#ffd60a;color:#ffd60a}
+:is(#tp,#tabs) .ch:nth-child(7n+1){border-color:#d62828}:is(#tp,#tabs) .ch.on:nth-child(7n+1){background:#d62828;color:#fff}
+:is(#tp,#tabs) .ch:nth-child(7n+2){border-color:#f77f00}:is(#tp,#tabs) .ch.on:nth-child(7n+2){background:#f77f00;color:#1b1f3b}
+:is(#tp,#tabs) .ch:nth-child(7n+3){border-color:#ffd60a}:is(#tp,#tabs) .ch.on:nth-child(7n+3){background:#ffd60a;color:#1b1f3b}
+:is(#tp,#tabs) .ch:nth-child(7n+4){border-color:#2dc653}:is(#tp,#tabs) .ch.on:nth-child(7n+4){background:#2dc653;color:#0b2a14}
+:is(#tp,#tabs) .ch:nth-child(7n+5){border-color:#1d6fd6}:is(#tp,#tabs) .ch.on:nth-child(7n+5){background:#1d6fd6;color:#fff}
+:is(#tp,#tabs) .ch:nth-child(7n+6){border-color:#7b2cbf}:is(#tp,#tabs) .ch.on:nth-child(7n+6){background:#7b2cbf;color:#fff}
+:is(#tp,#tabs) .ch:nth-child(7n){border-color:#e5338a}:is(#tp,#tabs) .ch.on:nth-child(7n){background:#e5338a;color:#fff}
 </style></head><body>
 <header class="top"><h1>📄 CareerKit</h1><select id="prof" aria-label="Profile" style="width:auto;max-width:140px"></select><select id="lang" aria-label="Language" style="width:auto"><option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option></select><button class="b" data-a="theme" aria-label="Toggle dark mode">🌓</button></header>
 <div class="priv" id="priv"></div>
